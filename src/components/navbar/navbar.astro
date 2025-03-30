@@ -5,19 +5,9 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
-  {
-    title: "关于我们",
-    path: "/about",
+{
+    title: "主页",
+    path: "/",
   },
   {
     title: "博客",
@@ -26,6 +16,19 @@ const menuitems = [
   {
     title: "联系我们",
     path: "/contact",
+  },
+  {
+    title: "关于我们",
+    path: "/about",
+  },
+  {
+    title: "更多",
+    path: "#",
+    children: [
+      { title: "图片库（开发中）", path: "/photos" },
+      { title: "抽象好活（开发中）", path: "/ai" },
+      { title: "404 Page", path: "/404" },
+    ],
   },
   {
     title: "作者的个人博客",
